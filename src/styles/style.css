@@ -376,12 +376,13 @@ body{
 	margin-top: 10px;
     color: #bcbdbf;
 }
-.form-contact__name,
 .form-contact__email {
-	width: 333px;
+	float: right;
+	width: 330px;
 }
 .form-contact__name {
-	margin-right: 28px;
+	width: 330px;
+	display: inline;
 }
 .form-contact__message,
 .form-contact__subject {
