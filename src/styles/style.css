@@ -35,7 +35,6 @@ body{
 	padding-top: 59px;
 	font-size: 14px;
 	color: rgb(193, 193, 193);
-	margin-bottom: 15px; 
 }
 .hashtag-text {
 	font-size: 15px;
@@ -133,7 +132,14 @@ body{
 	display: inline-block;
     font-size: 21px;
     color: #5c6bc0;
+    padding-top: 19px;
+	padding-bottom: 19px;
+	padding-left: 35px;
+	padding-right: 35px;
     text-transform: uppercase;
+    position: relative;
+	top: -18px;
+	left: -34px;
 	margin-top: 45px;
 }
 .block-content__pressbutton_size-24:hover,
@@ -185,13 +191,13 @@ body{
 .block-content__images {
 	width: 100%;
 	height: 536px;
-	background: url(../images/1.jpg);
+	background-image: url(../images/1.jpg);
 	background-repeat: round;
 }
 .block-content__images:hover {
 	width: 100%;
 	height: 536px;
-	background: url(../images/1Hover.jpg);
+	background-image: url(../images/1Hover.jpg);
 	background-repeat: round;
 }
 .button {
@@ -377,18 +383,26 @@ body{
     color: #bcbdbf;
 }
 .form-contact__email {
+	font-family: 'Lato';
+	font-size: 20px;
+	font-weight: 400;
 	float: right;
 	width: 330px;
 }
 .form-contact__name {
+	font-family: 'Lato';
+	font-size: 20px;
+	font-weight: 400;
 	width: 330px;
 	display: inline;
 }
 .form-contact__message,
 .form-contact__subject {
+	font-family: 'Lato';
+	font-size: 20px;
+	font-weight: 400;
     width: 730px;
     margin-top: 30px;
-
 }
 .form-contact__message {
 	padding-top: 15px;
