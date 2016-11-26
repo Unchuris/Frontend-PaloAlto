@@ -2,51 +2,55 @@
 <html>
   <head>
     <meta charset="utf-8" />
-    <title>7bits-frontend-2016</title>
-	<link rel="stylesheet" type="text/css" href="../styles/style.css">
-	<link href="https://fonts.googleapis.com/css?family=Lato:400,700i,700" rel="stylesheet">
-  </head>
-  
+    <meta name="keywords" content="Palo, Alto, Travel, Palo-Alto">
+    <meta name="description" content="Palo Alto">
+    <title>Palo Alto</title>
+    <link rel="shortcut icon" href="../images/favicon.ico" sizes="32x32"/>
+    <link rel="shortcut icon" href="../images/favicon.ico" sizes="16x16"/>
+    <link rel="stylesheet" href="../vendor/normalize.css"/>
+    <link rel="stylesheet" type="text/css" href="../styles/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Lato:400,700i,700" rel="stylesheet">
+  </head> 
   <body>
-		<header class="header">
-			<div class="header__logo">
-				<a href ="index.html"><img src="../images/PaloAlto.png" alt="Palo Alto"></a>
-			</div>
-			<nav class="nav">
-				<a class="nav__ref" href="index.html"">home</a>
-				<a class="nav__ref" href="index.html">about</a>
-				<a class="nav__ref "href="index.html">archive</a>
-				<a class="nav__ref "href="contacts.html">contact</a>
-				<a class="nav__ref-src" href="index.html"></a>
-			</nav>
-		</header>
+        <header class="header">
+            <div class="header__logo">
+                <a href ="index.html"><img src="../images/PaloAlto.png" alt="Palo Alto"></a>
+            </div>
+            <nav class="nav">
+                <a class="nav__ref" href="index.html">home</a>
+                <a class="nav__ref" href="index.html">about</a>
+                <a class="nav__ref" href="index.html">archive</a>
+                <a class="nav__ref" href="contacts.html">contact</a>
+                <a class="nav__ref-src" href="index.html"></a>
+            </nav>
+        </header>
+  
+        {% block main %}
+        {% endblock %}
 
-		{% block main %}
-		{% endblock %}
-
-		<footer class="footer">
-			<div class="footer__internal">
-				<div class="footer__logo"><a href ="index.html"><img src="../images/PaloAlto.png" alt="Palo Alto"></a></div>
-				<div class="footer__nav">
-					<a class="nav__ref_color-gray">home</a>
-					<a class="nav__ref_style" href="index.html">about</a>
-					<a class="nav__ref_style "href="index.html">archive</a>
-					<a class="nav__ref_style "href="contacts.html">contact</a>
-					<div class="footer__background"><a class="nav__ref-src_color-white" href="index.html"></a></div>
-				</div>
-				<hr class="footer__line"></hr>
-				<div class="footer__text">Nunc placerat dolor at lectus hendrerit dignissim. Ut tortor sem, consectetur nec hendrerit ut, ullamcorper ac odio. Donec viverra ligula at quam tincidunt imperdiet. Nulla mattis tincidunt auctor.</div>
-				<hr class="footer__line_small"></hr>
-				<div class="footer__text_size-14">© 2015 - Palo Alto. All Rights Reserved. Designed & Developed by
-				<a class="footer__text-lato-bold" href="#" target="_blank">PixelBuddha Team</a></div> 
-				<div class="share-icons">
-					<a class="icons__background" href="#" target="_blank"><div class="share-icons__img_facebook"></div></a>
-					<a class="icons__background" href="#" target="_blank"><div class="share-icons__img_twitter"></div></a>
-					<a class="icons__background" href="#" target="_blank"><div class="share-icons__img_instagram "></div></a>
-					<a class="icons__background" href="#" target="_blank"><div class="share-icons__img_pinterest"></div></a>
-				</div>
-			</div>
-		</footer> 
+        <footer class="footer">
+            <div class="footer__internal">
+                <div class="footer__logo"><a href ="index.html"><img src="../images/PaloAlto.png" alt="Palo Alto"></a></div>
+                <div class="footer__nav">
+                    <a class=" nav__ref_color-gray">home</a>
+                    <a class="nav__ref_style" href="index.html">about</a>
+                    <a class="nav__ref_style" href="index.html">archive</a>
+                    <a class="nav__ref_style" href="contacts.html">contact</a>
+                    <div class="footer__background"><a class="nav__ref-src_color-white" href="index.html"></a></div>
+                </div>
+                <hr class="footer__line">
+                <div class="footer__text">Nunc placerat dolor at lectus hendrerit dignissim. Ut tortor sem, consectetur nec hendrerit ut, ullamcorper ac odio. Donec viverra ligula at quam tincidunt imperdiet. Nulla mattis tincidunt auctor.</div>
+                <hr class="footer__line_small">
+                <div class="footer__text_size-14">© 2015 - Palo Alto. All Rights Reserved. Designed & Developed by
+                <a class="footer__text-lato-bold" href="#" target="_blank">PixelBuddha Team</a></div> 
+                <div class="share-icons">
+                    <a class="icons__background" href="#" target="_blank"><div class="share-icons__img_facebook"></div></a>
+                    <a class="icons__background" href="#" target="_blank"><div class="share-icons__img_twitter"></div></a>
+                    <a class="icons__background" href="#" target="_blank"><div class="share-icons__img_instagram "></div></a>
+                    <a class="icons__background" href="#" target="_blank"><div class="share-icons__img_pinterest"></div></a>
+                </div>
+            </div>
+        </footer> 
 
   </body>
 
