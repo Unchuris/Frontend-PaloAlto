@@ -10,7 +10,7 @@ var path = {
     html: 'src/templates/*.html',
     img: 'src/images/*',
     vendor: {
-      css: 'src/vendor/css/*.css'
+      css: 'src/vendor/*.css'
     },
     dist: {
       css:  'dist/styles/',

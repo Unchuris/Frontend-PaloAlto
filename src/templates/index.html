@@ -1,6 +1,6 @@
 ﻿{% extends "layout.html" %}
-
-{% block main %}
+{% set activeTab = 1 %}
+		{% block main %}
 		<main>
 			<section class="block-content">
 				<article class="block-content__internal">
@@ -18,9 +18,9 @@
 				</article>
 			</section>
 			<section class="block-content">
-				<div class="block-content__images"><img srcset="../images/home_cover.jpg 1x, ../images/home_cover@2x.jpg 2x"  alt="mountain" width="956" height="536"></div>
+				<div class="block-content__images"><img srcset="./images/home_cover.jpg 1x, ./images/home_cover@2x.jpg 2x"  alt="mountain" width="100%" height="100%"></div>
 				<article class="block-content__internal">
-					<a href="#" target="_blank"><button class="button" type="button">i do observe</button></a>
+					<a href="#" target="_blank"><button class="button_480px" type="button">i do observe</button></a>
 					<div class="date-text">Sep 18</div>
 					<h2 class="title-text">You know, I'd rather argue with you, then laugh with anyone else.</h2>
 					<hr class="block-content__line">
@@ -40,7 +40,7 @@
 					<div class="date-text">Sep 11</div>
 					<h2 class="title-text">Democracy means simply the bludgeoning of the people by the people for the people.</h2>
 					<hr class="block-content__line">
-					<div class="block-content__image"><img srcset="../images/img.jpg 1x, ../images/img@2x.jpg 2x"  width="136" height="381" alt="Статуя"></div>
+					<div class="block-content__image"><img srcset="./images/img.jpg 1x, ./images/img@2x.jpg 2x"  width="136" height="381" alt="Статуя"></div>
 					<div class="main-text">Quisque congue lacus mattis massa luctus, nec hendrerit purus aliquet. Ut ac elementum urna. Pellentesque suscipit metus et egestas congue. Duis eu pellentesque turpis, ut maximus metus. Sed ultrices tellus vitae rutrum congue. Fusce luctus augue id nisl suscipit, vel sollicitudin orci egestas. Morbi posuere venenatis ipsum, ac vestibulum quam dignissim efficitur. Ut vitae rutrum augue, in volutpat quam. Cras a viverra ipsum. Aenean ut consequat ex, vitae vulputate nunc. Vestibulum metus nisi, aliquam sed tincidunt sit amet, pretium et augue.</div>
 					<div class="main-text"><div class="P"></div>Mauris sem odio, rhoncus eget euismod sed, pellentesque sit amet felis. Praesent dictum eleifend dui et efficitur. Nunc non orci in neque sodales semper. Etiam euismod volutpat lorem,  
 					<a class="maint-text__hyperlink" href="#" target="_blank">vestibulum malesuada</a> justo aliquet eget. Nunc lacus ante, varius a euismod eu, finibus commodo erat. Curabitur tincidunt sit amet nunc id interdum. Aliquam augue nisi, venenatis vitae ex at, lobortis fringilla nibh. Proin placerat enim vitae egestas eleifend. Aliquam quis orci dignissim, posuere nibh a, eleifend augue. Cras quis metus nec tortor aliquet ullamcorper. Quisque varius porta metus, ut maximus dolor euismod nec. Suspendisse sit amet feugiat turpis.</div>
@@ -55,4 +55,3 @@
 			</section>
 		</main>
 {% endblock %}
-		
