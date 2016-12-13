@@ -1,9 +1,10 @@
 <!doctype html>
 <html>
   <head>
-    <meta charset="utf-8" />
+    <meta charset="utf-8"/>
     <meta name="keywords" content="Palo, Alto, Travel, Palo-Alto">
     <meta name="description" content="Palo Alto">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     {% if activeTab == 1 %} <title>Palo Alto</title> {% endif %} 
     {% if activeTab == 4 %} <title>Contacts</title> {% endif %} 
     <link rel="shortcut icon" href="./images/favicon.ico" sizes="32x32"/>
@@ -11,13 +12,18 @@
     <link rel="stylesheet" href="./vendor/vendor.css"/>
     <link rel="stylesheet" type="text/css" href="./styles/style.css">
     <link href="https://fonts.googleapis.com/css?family=Lato:400,700i,700" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-2.2.0.min.js"></script>
+    <script src="http://mozilla.github.io/nunjucks/files/nunjucks.min.js"></script>
+    <script src="./scripts/scripts.js"></script>
   </head> 
   <body>
         <header class="header">
             <div class="header__logo">
                 <a href ="index.html"><img src="./images/PaloAlto.png" alt="Palo Alto"></a>
             </div>
+            <div class="nav_menu"></div> 
             <nav class="nav">
+                <a class="nav__ref-src_output" href="index.html"></a>
                 <a {% if activeTab == 1 %} class="nav__ref_color-gray" {% else %} class="nav__ref" href="index.html"{% endif %}>home</a>
                 <a {% if activeTab == 2 %} {% else %} class="nav__ref" {% endif %} href="index.html">about</a>
                 <a {% if activeTab == 3 %} {% else %} class="nav__ref" {% endif %}  href="index.html">archive</a>
@@ -33,10 +39,10 @@
             <div class="footer__internal">
                 <div class="footer__logo"><a href ="index.html"><img src="./images/PaloAlto.png" alt="Palo Alto"></a></div>
                 <div class="footer__nav">
-                    <a {% if activeTab == 1 %} class=" nav__ref_color-gray" {% else %} class="nav__ref_style" href="index.html" {% endif %}> home</a>
-                    <a {% if activeTab == 2 %} class=" nav__ref_color-gray" {% else %} class="nav__ref_style" {% endif %} href="index.html"> about</a>
-                    <a {% if activeTab == 3 %} class=" nav__ref_color-gray" {% else %} class="nav__ref_style" {% endif %} href="index.html"> archive</a>
-                    <a {% if activeTab == 4 %} class=" nav__ref_color-gray" {% else %} class="nav__ref_style" href="contacts.html" {% endif %}>contact</a>
+                    <a {% if activeTab == 1 %} class="nav__ref_color-gray_inline" {% else %} class="nav__ref_style" href="index.html" {% endif %}> home</a>
+                    <a {% if activeTab == 2 %} class=" nav__ref_color-gray_inline" {% else %} class="nav__ref_style" {% endif %} href="index.html"> about</a>
+                    <a {% if activeTab == 3 %} class=" nav__ref_color-gray_inline" {% else %} class="nav__ref_style" {% endif %} href="index.html"> archive</a>
+                    <a {% if activeTab == 4 %} class=" nav__ref_color-gray_inline" {% else %} class="nav__ref_style" href="contacts.html" {% endif %}>contact</a>
                     <div class="footer__background"><a class="nav__ref-src_color-white" href="index.html"></a></div>
                 </div>
                 <hr class="footer__line">

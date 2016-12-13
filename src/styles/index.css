@@ -132,10 +132,6 @@
     }
 }
 @media screen and (max-width: 480px) {
-    .block-content {
-        margin-left: 15px;
-        margin-right: 15px;
-    }
     .block-content__images {
         height: 278px;
         padding-bottom: 0;
@@ -146,7 +142,7 @@
     .block-content__image {
         float: none;
         padding-left: 0;
-         text-align: center;
+        text-align: center;
     }
     .block-content__hashtag {
         margin-top: 0;
