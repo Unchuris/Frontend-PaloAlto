@@ -137,7 +137,7 @@ $("#date").on("focus", function(){;
     "border": "none"
   });
   $(".form-about").submit(function(e){
-    if (11 !== $("#date").val().replace(/[d/m y]/g,'').length) {
+    if (8 !== $("#date").val().replace(/[d/m y]/g,'').length) {
       e.preventDefault();
     };
   });
