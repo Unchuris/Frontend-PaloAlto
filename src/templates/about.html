@@ -1,0 +1,28 @@
+﻿{% extends "layout.html" %}
+{% set activeTab = 2 %}
+        {% block main %}
+        <main>
+            <section class="block-content">
+                <article class="block-content__internal">
+                    <h2 class="title-text_padding">about</h2>
+                    <hr class="block-content__line">
+                    <form class="form-about" action="#">
+                        <label class="form-about__label" for "username">First Name</label>
+                        <input class="form-contact form-contact__about" id="username" tabindex="1" name="username" placeholder="Jhon">
+                        <label class="form-about__label" for "lastname">Last Name</label>
+                        <input class="form-contact form-contact__about" id="lastname" tabindex="2" name="lastname" placeholder="Doe">
+                        <label class="form-about__label" for "email">E-mail</label>
+                        <input class="form-contact form-contact__about" id="email" tabindex="3" name="email" placeholder="jhon_doe@gmail.com" >
+                        <label class="form-about__label" for "phone">Phone</label>
+                        <input class="form-contact form-contact__about" id="phone" tabindex="4" name="phone" placeholder="+_(___)____-__-__" >
+                        <label class="form-about__label" for "date">Date of Birth</label>
+                        <input class="form-contact form-contact__about datepicker-here" id="date" tabindex="5" name="text" placeholder="DD/MM/YYYY">
+                        <label class="form-about__label" for "6">Sex</label>
+                        <input class="form-contact__about-radio" type="radio" checked name="raz" id="6"><label class="label" for="6">Male</label><Br>
+                        <input class="form-contact__about-radio" type="radio" name="raz" id="7"><label class="label" for="7">Female</label><Br>
+                        <input class="form-send block-content__pressbutton_size-24" type="submit" value="submit">
+                    </form> 
+                </article>
+            </section>
+        </main>
+{% endblock %}
